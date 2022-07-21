@@ -1,0 +1,256 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+}
+nav .hamburger-icon {
+  margin-top: 10px;
+}
+
+.main-container {
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+.main-container .hero-image img {
+  width: 450px;
+}
+.main-container .text .fifty {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.9rem;
+  background: #149f39;
+  padding: 10px 20px;
+  color: white;
+}
+.main-container .text .main-heading {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 5rem;
+  padding: 20px 0;
+}
+.main-container .text .main-para {
+  font-family: "Roboto";
+  font-weight: 550;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+.main-container .text button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1rem;
+  background: #ffc066;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.main-container .text button:hover {
+  background: #e89d35;
+}
+
+.service-container {
+  justify-content: center;
+}
+.service-container .container {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.service-container .container h6 {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 1rem;
+}
+.service-container .container p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.03rem;
+}
+.service-container .discount,
+.service-container .fresh,
+.service-container .delivery {
+  align-items: center;
+  padding: 0 20px;
+}
+.service-container .discount-text,
+.service-container .fresh-text,
+.service-container .delivery-text {
+  padding: 5px 7px;
+}
+
+hr {
+  margin-top: 35px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px;
+}
+.gallery-container h6 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #149f39;
+  padding: 8px 20px;
+  color: #ffffff;
+  margin: 10px 0;
+}
+.gallery-container h5 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gallery-container .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "one one two three" "one one two four" "five six seven four";
+  width: 100%;
+  height: 100vh;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.gallery-container .grid-container .grid-item {
+  background-repeat: no-repeat;
+}
+.gallery-container .grid-container .one {
+  grid-area: one;
+  background-color: #149f39;
+  background: url("../images/grid_image1.png");
+}
+.gallery-container .grid-container .two {
+  grid-area: two;
+  background-color: aqua;
+  background: url("../images/grid_image2.png");
+}
+.gallery-container .grid-container .three {
+  grid-area: three;
+  background-color: blue;
+  background: url("../images/grid_image3.png");
+}
+.gallery-container .grid-container .four {
+  grid-area: four;
+  background-color: black;
+  background: url("../images/grid_image7.png");
+}
+.gallery-container .grid-container .five {
+  grid-area: five;
+  background-color: blueviolet;
+  background: url("../images/grid_image4.png");
+}
+.gallery-container .grid-container .six {
+  grid-area: six;
+  background-color: brown;
+  background: url("../images/grid_image5.png");
+}
+.gallery-container .grid-container .seven {
+  grid-area: seven;
+  background-color: cadetblue;
+  background: url("../images/grid_image6.png");
+}
+
+footer {
+  background: #fff0db;
+  padding: 40px;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer .container .main-link,
+footer .container .support,
+footer .container .join {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .main-link h5,
+footer .container .support h5,
+footer .container .join h5 {
+  margin-bottom: 10px;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+}
+footer .container .main-link span,
+footer .container .support span,
+footer .container .join span {
+  margin-bottom: 5px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+}
+footer .container .main-link input,
+footer .container .support input,
+footer .container .join input {
+  margin-bottom: 5px;
+  padding: 4px 20px 4px 2px;
+  width: 180px;
+}
+footer .container .main-link .icons-container i,
+footer .container .support .icons-container i,
+footer .container .join .icons-container i {
+  margin-right: 5px;
+}
+footer .container .main-link .icons-container i:hover,
+footer .container .support .icons-container i:hover,
+footer .container .join .icons-container i:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .hamburger-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .logo img {
+    width: 110px;
+    height: 45px;
+  }
+  .main-container .text {
+    margin-top: 30px;
+  }
+  .main-container .hero-image img {
+    width: 350px;
+  }
+  .main-container .text .main-heading {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 3.5rem;
+  }
+  .service-container .container {
+    width: 100%;
+    margin: 0;
+  }
+  .service-container .container .discount,
+.service-container .container .fresh,
+.service-container .container .delivery {
+    width: 100%;
+    margin: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

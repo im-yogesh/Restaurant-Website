@@ -1,0 +1,37 @@
+@import "mixin";
+
+@media screen and (max-width: 700px) {
+  .hamburger-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .logo img {
+    width: 110px;
+    height: 45px;
+  }
+
+  .main-container .text {
+    margin-top: 30px;
+  }
+
+  .main-container .hero-image img {
+    width: 350px;
+  }
+
+  .main-container .text .main-heading {
+    @include fontStyle(400, 3.5rem);
+  }
+
+  .service-container .container {
+    width: 100%;
+    margin: 0;
+
+    .discount,
+    .fresh,
+    .delivery {
+      width: 100%;
+      margin: 10px;
+    }
+  }
+}

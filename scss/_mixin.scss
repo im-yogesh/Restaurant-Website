@@ -1,0 +1,11 @@
+@mixin fontStyle($weight, $size) {
+  font-family: "Roboto";
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin serviceFont($weight, $size) {
+  font-family: "Roboto";
+  font-weight: $weight;
+  font-size: $size;
+}
